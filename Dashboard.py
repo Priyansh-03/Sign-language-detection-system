@@ -14,7 +14,6 @@ import tkinter as tk
 from matplotlib import pyplot as plt 			#for gesture viewer
 from matplotlib.widgets import Button
 import sys										#for pyqt
-import os										#for removal of files
 import cv2										#for the camera operations
 import numpy as np 								#proceesing on images
 import qimage2ndarray
@@ -26,7 +25,9 @@ import win32con									#for removing title cv2 window and always on top
 import keyboard									#for pressing keys
 import pyttsx3									#for tts assistance
 import shutil									#for removal of directories
+import os										#for removal of files
 index = 0										#index used for gesture viewer
+
 engine = pyttsx3.init()							#engine initialization for audio tts assistance
 
 def nothing(x):
